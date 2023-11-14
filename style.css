@@ -1,5 +1,5 @@
 :root{
-    --main-bg-color:#fff;
+    --main-bg-color:white;
     --main-text-color:#888888;
 }
 [data-theme="dark"]{
