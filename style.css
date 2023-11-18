@@ -1,10 +1,10 @@
 :root{
     --main-bg-color:white;
-    --main-text-color:#888888;
+    --main-text-color:#62d443;
 }
 [data-theme="dark"]{
     --main-bg-color:#1e1f26;
-    --main-text-color:#ccc;
+    --main-text-color:#cdd23f;
 }
 *{
     box-sizing: border-box;
@@ -22,19 +22,21 @@ body{
     transition: all ease 0.2s;
 }
 .page-header{
+    width: 23%;
     font-size: 2rem;
     color: var(--main-text-color);
     padding: 1em 0;
     font-family: monospace;
     text-transform: uppercase;
     letter-spacing: 4px;
+    text-align: center;
     transition: all ease 0.2s;
 }
 .strong{
     justify-content: center;
     align-items: center;
-  
     display: flex;
+    text-align: center;
 }
 .clock{
     min-height: 18em;
@@ -120,3 +122,62 @@ body{
     cursor: pointer;
     transition: all ease 0.3s;
 }
+@media (max-width: 1024px){
+    body{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        background-color: var(--main-bg-color);
+        position: relative;
+        transition: all ease 0.2s;
+    }
+} 
+@media (max-width: 767px){
+    body{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        background-color: var(--main-bg-color);
+        position: relative;
+        transition: all ease 0.2s;
+    }
+    .strong{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+} 
+@media (max-width: 320px){
+    body{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        background-color: var(--main-bg-color);
+        position: relative;
+        transition: all ease 0.2s;
+    }
+    .strong{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        font-size: 10px;
+    }
+    font{
+        font-size: 12px;
+
+    }
+} 

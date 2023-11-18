@@ -33,7 +33,7 @@ switchModeBtn.addEventListener("click", switchTheme, false);
 let currentTheme = "dark";
 
 if (currentTheme) {
-    documentElement.setAttribute("data-theme",currentTheme);
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    // documentElement.setAttribute("data-theme",currentTheme);
     switchModeBtn.textContent = currentTheme;
 }
-
